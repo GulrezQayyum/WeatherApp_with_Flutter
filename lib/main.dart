@@ -1,8 +1,11 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_project/Currency_Converter.dart';
 
-void main() {
-  runApp(MyApp());
+import 'package:flutter/material.dart';
+import 'package:flutter_project/weather_screen.dart';
+
+
+
+void main(){
+   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -10,10 +13,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CurrencyConverterMaterialPage(),
+      theme: ThemeData.dark(useMaterial3: true),
+      home: const WeatherScreen(),
     );
   }
 }
+
+
